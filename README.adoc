@@ -53,15 +53,11 @@ Redis deployments that bundle RediSearch include:
 This repo includes a demo to get you started. To run the demo, you'll need:
 
 * Docker (with Linux Containers if using Windows).
-* https://github.com/redis-developer/riot[Riot File] installed to seed Redis with some data. 
-* A version of `redis-cli`. `redis-cli` ships with Redis Server. You can also build it from https://github.com/redis/redis#building-redis[source].
 
 To start the demo, run the following commands:
 
 . `docker-compose -f demo/docker-compose.yaml build`
 . `docker-compose -f demo/docker-compose.yaml up -d`
-. `redis-cli FT.CREATE beers PREFIX 1 beer: SCHEMA id TAG SORTABLE brewery_id TAG SORTABLE name TEXT SORTABLE abv NUMERIC SORTABLE descript TEXT style_name TAG SORTABLE cat_name TAG SORTABLE`
-. `docker run --add-host=host.docker.internal:host-gateway fieldengineering/riot-file -h host.docker.internal import https://storage.googleapis.com/jrx/beers.json hset --keyspace beer --keys id`
 . `docker exec -it odbc isql -k "DSN=Redis;host=redis;"`
 
 == Installation
@@ -75,7 +71,7 @@ To install the driver, first download the installer.
 
 === Download the installer
 
-Fetch the installer zipfile from the https://github.com/redis-field-engineering/redis-sql-odbc-dist/releases/latest[Redis SQL ODBC release page]. There you'll find a file called `redis-sql-odbc-installers-<VERSION>.zip`.
+Fetch the installer zipfile from the https://github.com/redis-field-engineering/redis-odbc/releases/latest[Redis SQL ODBC release page]. There you'll find a file called `redis-sql-odbc-installers-<VERSION>.zip`.
 
 Download and unzip the file.
 
