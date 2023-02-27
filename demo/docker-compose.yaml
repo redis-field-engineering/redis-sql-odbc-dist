@@ -2,12 +2,14 @@ version: "3.7"
 
 services:
   redis:
+    platform: linux/x86_64
     container_name: odbc_redis
     build: 
       context: ./redis-stack
     ports:
       - "6379:6379"
   odbc:
+    platform: linux/x86_64
     container_name: odbc
     links:
       - redis
