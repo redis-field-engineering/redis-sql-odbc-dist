@@ -1,0 +1,10 @@
+FROM ubuntu
+RUN apt-get update && apt-get install unixodbc -y && apt-get install odbcinst -y && apt-get install -y iputils-ping && apt-get install curl -y
+COPY . .
+RUN curl https://storage.googleapis.com/slorello/redis_odbc-Linux.tar.gz -O
+RUN tar -xf redis_odbc-Linux.tar.gz
+RUN cp -r redis_odbc-*-Linux/redis_odbc /usr/local/lib
+RUN odbcinst -i -d -f driver_template
+RUN odbcinst -i -s -f dsn_template
+ENTRYPOINT ["tail"]
+CMD ["-f","/dev/null"]

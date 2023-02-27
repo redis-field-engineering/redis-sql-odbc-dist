@@ -1,0 +1,6 @@
+[Redis]
+Driver = Redis
+Description = A Redis Source
+Host = redis
+Port = 6379
+User = default

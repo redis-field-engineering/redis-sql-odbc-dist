@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  redis:
+    container_name: odbc_redis
+    build: 
+      context: ./redis-stack
+    ports:
+      - "6379:6379"
+  odbc:
+    container_name: odbc
+    links:
+      - redis
+    build:
+      context: ./odbc

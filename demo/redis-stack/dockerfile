@@ -1,0 +1,4 @@
+FROM redis/redis-stack-server
+RUN apt update && apt install curl -y
+RUN curl https://storage.googleapis.com/slorello/beers.rdb -o /data/dump.rdb
+CMD ["/entrypoint.sh"]

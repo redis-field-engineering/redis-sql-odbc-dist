@@ -1,0 +1,5 @@
+[Redis]
+Description=Redis ODBC Driver
+Driver=/usr/local/lib/redis_odbc/libredis_odbc.so
+Setup=/usr/local/lib/redis_odbc/libredis_odbc.so
+UsageCount=1
