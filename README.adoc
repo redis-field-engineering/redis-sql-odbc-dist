@@ -38,6 +38,14 @@ Redis Stack is an extension to Redis that, among other things, lets you index yo
 
 We built {name} to let you query Redis using SQL through ODBC. For example, {name} lets you read data for business intelligence tools such as Power BI.
 
+++++
+
+<p align="center">
+  <img alt="Redis SQL ODBC" src=".github/images/powerbi_odbc.gif">
+</p>
+
+++++
+
 == Requirements
 
 {name} requires a Redis Deployment that includes https://redis.io/docs/stack/search/[RediSearch].
