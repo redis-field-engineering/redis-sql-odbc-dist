@@ -40,10 +40,13 @@ We built {name} to let you query Redis using SQL through ODBC. For example, {nam
 
 ++++
 <p align="center">
+  <p align="left">
+    <i>
     Using Redis SQL ODBC, PowerBI, and <a href='https://redis.io/docs/stack/'>Redis Stack</a> to build
-    a dashboard for UFO sightings in Florida.
+    a dashboard for UFO sightings in Florida:
+    </i>
   </p>
-<p align="center">
+
   <img alt="Redis SQL ODBC" src=".github/images/powerbi_odbc.gif">
 </p>
 
