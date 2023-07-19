@@ -103,6 +103,9 @@ This process will install the driver in `/usr/local/lib/redis-sql-odbc`.
 
 === Install on Windows 10+
 
+Install the link:https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022[Microsoft Visual C++ Redistributable package package for VS 2015-2022].
+These system libraries are required for the driver to work.
+
 Run the `redis-odbc-amd64.msi` file, and following steps in the installation wizard.
 
 This will install the binaries at `C:\Program Files\redis`.
