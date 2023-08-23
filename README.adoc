@@ -85,7 +85,7 @@ To install the driver, first download the installer.
 
 === Download the installer
 
-Fetch the installer zipfile from the https://github.com/redis-field-engineering/redis-odbc/releases/latest[Redis SQL ODBC release page]. There you'll find a file called `redis-sql-odbc-installers-<VERSION>.zip`.
+Fetch the installer zipfile from the https://github.com/redis-field-engineering/redis-sql-odbc-dist/releases/latest[Redis SQL ODBC release page]. There you'll find a file called `redis-sql-odbc-installers-<VERSION>.zip`.
 
 Download and unzip the file.
 
